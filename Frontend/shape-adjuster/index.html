@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex h-screen items-center justify-center">
+        <div class="flex flex-col w-128 h-150 border p-4 gap-4 rounded-lg items-center justify-between">
+            <p id="scaleCounter">Scale Counter: 0</p>
+            <div id="shape" class="border"></div>
+            <div class="grid grid-flow-col grid-rows-4 gap-4 border p-2 w-full">
+                <div class="border flex justify-between gap-4">
+                    <label for="s-range">Radius</label>
+                    <input type="range" name="" id="s-range" value="0" />
+                </div>
+                <div class="border flex justify-between gap-4">
+                    <label for="r-range">Red</label>
+                    <input type="range" name="" id="r-range" min="0" max="255" value="150" />
+                </div>
+                <div class="border flex justify-between gap-4">
+                    <label for="g-range">Green</label>
+                    <input type="range" name="" id="g-range" min="0" max="255" value="150" />
+                </div>
+                <div class="border flex justify-between gap-4">
+                    <label for="b-range">Blue</label>
+                    <input type="range" name="" id="b-range" min="0" max="255" value="150" />
+                </div>
+                <div class="border flex justify-between gap-4">
+                    <label for="scaler">Scale</label>
+                    <input type="range" name="" id="scaler" min="1" max="19" value="9">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
